@@ -2,6 +2,8 @@
 !/.gitignore
 !/README.md
 !/CMakeLists.txt
-!/Inc/
+!/FlightComputer.c
+!/FlightComputer.h
+!/States/
 !/Drivers/
-!/Src/
+!/System/

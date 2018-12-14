@@ -40,11 +40,16 @@ add_definitions(-D__weak=__attribute__\(\(weak\)\) -D__packed=__attribute__\(\(_
 # Set the SOURCES variable to the HAL sources, our sources, and the startup assembly.
 file(GLOB_RECURSE SOURCES
         startup_stm32f427xx.s
-        Src/*.c
+        FlightComputer.c
+        System/*.c
+        States/*.c
         Drivers/STM32F4xx_HAL_Driver/Src/*.c)
 
 # Include all of the header directories.
-include_directories(Inc
+include_directories(
+        .
+        System
+        States
         Drivers/STM32F4xx_HAL_Driver/Inc
         Drivers/STM32F4xx_HAL_Driver/Inc/Legacy
         Drivers/CMSIS/Device/ST/STM32F4xx/Include

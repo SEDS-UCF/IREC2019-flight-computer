@@ -1,6 +1,0 @@
-#ifndef IREC19_FC_STATEPADIDLE_H
-#define IREC19_FC_STATEPADIDLE_H
-
-void StatePadIdle();
-
-#endif //IREC19_FC_STATEPADIDLE_H
