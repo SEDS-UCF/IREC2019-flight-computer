@@ -2,6 +2,9 @@
 
 #include "FlightComputer.h"
 
+// TODO: Set this appropriately to cover all the FC_Flags related to checkout.
+#define SELFTEST_MASK 0x1
+
 /**
  * Quicker checkout variant, this just checks sensor data against our own values.
  * Does NOT perform sensor self-tests, since those are time consuming and expect

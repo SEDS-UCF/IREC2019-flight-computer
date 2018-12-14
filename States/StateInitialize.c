@@ -3,11 +3,6 @@
 #include "FlightComputer.h"
 #include "Checkout.h"
 
-// TODO: Set this appropriately to cover all the FC_Flags related to checkout.
-#define SELFTEST_MASK 0x1
-
-
-
 /**
  * The flight computer interfaces (SPI, USART, etc.) have already been initialized
  * at this point. This method is for setting up any data structs we may end up needed,
