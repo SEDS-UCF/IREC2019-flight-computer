@@ -1,6 +1,7 @@
 #include "StatePadIdle.h"
 
 #include "FlightComputer.h"
+#include "Checkout.h"
 
 /**
  * This state represents the period of time after initialization but prior to
@@ -10,7 +11,10 @@
  * terminal count (or abort procedures).
  */
 void StatePadIdle() {
-	// TODO: Send telemetry to ground.
+	uint32_t sanity = QuickCheckout();
+	// TODO: Check sanity and actually do something if the system is insane.
+
+	// TODO: Collect telemetry and send to ground.
 
 	// TODO: Listen for FILL signals.
 	// if we get FILL signal:

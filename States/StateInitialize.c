@@ -1,22 +1,12 @@
 #include "StateInitialize.h"
 
 #include "FlightComputer.h"
+#include "Checkout.h"
 
 // TODO: Set this appropriately to cover all the FC_Flags related to checkout.
 #define SELFTEST_MASK 0x1
 
-/**
- * Perform any available automated self-tests provided by the sensor's.
- * Additionally, perform our own sanity checks of data from both the external
- * sensors, as well as our ADC values and any internal states.
- *
- * This function sets sdata.flags accordingly. Also returns sdata.flags AND'd with
- * the relevant self-test flag bits for easy retval checking.
- */
-uint32_t DoCheckout() {
-	// TODO: Do battery of tests, setting flags appropriately if errors.
-	return sdata.flags & SELFTEST_MASK;
-}
+
 
 /**
  * The flight computer interfaces (SPI, USART, etc.) have already been initialized
@@ -30,7 +20,7 @@ void StateInitialize() {
 
 	// TODO: Establish ground contact and confirm with test handshake.
 
-	uint32_t sanity = DoCheckout();
+	uint32_t sanity = FullCheckout();
 	// TODO: Check sanity and actually do something if the system is insane.
 
 	sdata.next_state = FSTATE_PADIDLE;

@@ -41,6 +41,7 @@ add_definitions(-D__weak=__attribute__\(\(weak\)\) -D__packed=__attribute__\(\(_
 file(GLOB_RECURSE SOURCES
         startup_stm32f427xx.s
         FlightComputer.c
+        Auxiliary/*.c
         System/*.c
         States/*.c
         Drivers/STM32F4xx_HAL_Driver/Src/*.c)
@@ -48,6 +49,7 @@ file(GLOB_RECURSE SOURCES
 # Include all of the header directories.
 include_directories(
         .
+        Auxiliary
         System
         States
         Drivers/STM32F4xx_HAL_Driver/Inc

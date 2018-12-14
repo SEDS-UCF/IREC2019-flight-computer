@@ -4,6 +4,7 @@
 !/CMakeLists.txt
 !/FlightComputer.c
 !/FlightComputer.h
+!/Auxiliary/
 !/States/
 !/Drivers/
 !/System/
