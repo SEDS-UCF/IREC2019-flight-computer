@@ -1,0 +1,6 @@
+#ifndef IREC19_FC_STATETERMINAL_H
+#define IREC19_FC_STATETERMINAL_H
+
+void StateTerminal();
+
+#endif //IREC19_FC_STATETERMINAL_H

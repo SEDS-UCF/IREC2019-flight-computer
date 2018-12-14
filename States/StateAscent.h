@@ -1,0 +1,6 @@
+#ifndef IREC19_FC_STATEASCENT_H
+#define IREC19_FC_STATEASCENT_H
+
+void StateAscent();
+
+#endif //IREC19_FC_STATEASCENT_H

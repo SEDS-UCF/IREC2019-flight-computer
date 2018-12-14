@@ -1,0 +1,6 @@
+#ifndef IREC19_FC_STATELANDED_H
+#define IREC19_FC_STATELANDED_H
+
+void StateLanded();
+
+#endif //IREC19_FC_STATELANDED_H

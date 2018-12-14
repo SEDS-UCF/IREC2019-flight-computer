@@ -1,0 +1,6 @@
+#ifndef IREC19_FC_STATECOAST_H
+#define IREC19_FC_STATECOAST_H
+
+void StateCoast();
+
+#endif //IREC19_FC_STATECOAST_H
